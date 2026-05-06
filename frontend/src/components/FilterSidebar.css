@@ -1,0 +1,148 @@
+.filter-sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.filter-group {
+    margin-bottom: 25px;
+}
+
+.filter-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    color: #333;
+}
+
+.icon-box {
+    width: 60px;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.icon-box:hover {
+    border-color: #329c92;
+}
+
+.icon-box img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.placeholder-icon {
+    font-size: 20px;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-list.scrollable {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+}
+
+.checkbox-item input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.collapsible-section {
+    border-top: 1px solid #eee;
+}
+
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+
+.collapsible-header:hover {
+    color: #329c92;
+}
+
+.arrow {
+    font-size: 8px;
+    transition: transform 0.3s ease;
+}
+
+.arrow.up {
+    transform: rotate(180deg);
+}
+
+.collapsible-content {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Custom Scrollbar */
+.filter-sidebar::-webkit-scrollbar,
+.checkbox-list.scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+
+.filter-sidebar::-webkit-scrollbar-track,
+.checkbox-list.scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.filter-sidebar::-webkit-scrollbar-thumb,
+.checkbox-list.scrollable::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.filter-sidebar::-webkit-scrollbar-thumb:hover,
+.checkbox-list.scrollable::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
