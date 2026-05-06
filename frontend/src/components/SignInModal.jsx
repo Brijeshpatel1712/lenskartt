@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SignInModal.css';
+import API_BASE_URL from '../config';
 import bannerImg from '../assets/signin-model.png';
 
 const SignInModal = ({ isOpen, onClose }) => {
@@ -27,7 +28,7 @@ const SignInModal = ({ isOpen, onClose }) => {
         setMessage({ type: '', text: '' });
 
         try {
-            const response = await fetch('http://localhost:5000/api/signin', {
+            const response = await fetch(`${API_BASE_URL}/api/signin`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(signInData)
@@ -56,7 +57,7 @@ const SignInModal = ({ isOpen, onClose }) => {
         setMessage({ type: '', text: '' });
 
         try {
-            const response = await fetch('http://localhost:5000/api/signup', {
+            const response = await fetch(`${API_BASE_URL}/api/signup`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(signUpData)
