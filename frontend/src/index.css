@@ -418,6 +418,8 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     gap: 40px;
+    overflow: hidden; /* Added to prevent side scroll */
+    width: 100%;
 }
 
 .trend-content-left {
@@ -636,11 +638,11 @@ body {
 }
 
 .trend-arrow.prev {
-    left: -20px;
+    left: 10px; /* Moved inside */
 }
 
 .trend-arrow.next {
-    right: -20px;
+    right: 10px; /* Moved inside */
 }
 
 /* Responsive adjustments for Wear The Trend */
