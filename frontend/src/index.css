@@ -1,26 +1,28 @@
-*,
-*::before,
-*::after {
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden !important;
+    position: relative;
     box-sizing: border-box;
 }
 
 :root {
     --font-family: 'Roboto', sans-serif;
     --primary-color: #329c92;
-    /* Lenskart teal/green */
     --text-dark: #000042;
     --text-light: #666;
     --bg-light: #fbf9f7;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0;
     font-family: var(--font-family);
     background-color: #fff;
     color: var(--text-dark);
-    overflow-x: hidden;
-    width: 100%;
-    position: relative;
 }
 
 .sticky-header {
