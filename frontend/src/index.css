@@ -19,16 +19,19 @@ body {
     background-color: #fff;
     color: var(--text-dark);
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .sticky-header {
     position: fixed;
     top: 0;
     z-index: 2000;
-    /* Higher than hover dropdowns */
     background: #fff;
     width: 100%;
+    max-width: 100vw;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
 .navbar-container {
@@ -1881,6 +1884,11 @@ body {
         overflow-x: auto;
         display: flex;
         justify-content: flex-start;
+        scrollbar-width: none; /* Hide scrollbar Firefox */
+    }
+
+    .category-bar::-webkit-scrollbar {
+        display: none; /* Hide scrollbar Chrome/Safari */
     }
     
     .categories { 
