@@ -1885,14 +1885,14 @@ body {
     .category-bar { 
         height: auto; 
         padding: 12px 5px; 
-        overflow-x: auto;
+        overflow-x: auto !important; /* Force scroll for nav */
         display: flex;
         justify-content: flex-start;
-        scrollbar-width: none; /* Hide scrollbar Firefox */
+        scrollbar-width: thin; 
     }
 
     .category-bar::-webkit-scrollbar {
-        display: none; /* Hide scrollbar Chrome/Safari */
+        display: none; 
     }
     
     .categories { 
