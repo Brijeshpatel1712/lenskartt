@@ -93,8 +93,6 @@ const Home = () => (
       </div>
       <ProductSectionHeader title="WITH ZERO POWER COMPUTER BLU LENSES" link="/computer-glasses" />
       <ZeroPowerComputerGlassesGrid />
-      <BookEyeTestHeader />
-      <BookEyeTestBar />
       <OurBrandsBanner />
       <div id="contact-lenses-section">
         <ProductSectionHeader title="CONTACT LENSES" link="/contact-lenses" />
